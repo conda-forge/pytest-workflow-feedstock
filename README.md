@@ -3,7 +3,7 @@ About pytest-workflow
 
 Home: https://github.com/LUMC/pytest-workflow
 
-Package license: GNU Affero General Public v3 or later (AGPLv3+)
+Package license: AGPL-3.0-or-later
 
 Feedstock license: BSD 3-Clause
 
