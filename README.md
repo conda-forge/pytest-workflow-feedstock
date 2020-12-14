@@ -5,11 +5,11 @@ Home: https://github.com/LUMC/pytest-workflow
 
 Package license: AGPL-3.0-or-later
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytest-workflow-feedstock/blob/master/LICENSE.txt)
 
 Summary: A pytest plugin for configuring workflow/pipeline tests using YAML files
 
-
+Documentation: https://pytest-workflow.readthedocs.io
 
 Current build status
 ====================
