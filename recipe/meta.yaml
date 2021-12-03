@@ -1,5 +1,5 @@
 {% set name = "pytest-workflow" %}
-{% set version = "1.5.0" %}
+{% set version = "1.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ebe66a478963bd043d37e377f2042d58254a0fc6b5c9b284d40d286a303e1a44
+  sha256: 8fb9fb31a6132c783231afbbbb92941297a42713dcd459694b5efe4a13b8cba7
 
 build:
   noarch: python
