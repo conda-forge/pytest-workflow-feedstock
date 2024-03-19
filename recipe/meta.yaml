@@ -24,6 +24,7 @@ requirements:
     - pytest >=7.0.0
     - python >=3.7
     - pyyaml
+    - xopen >=1.4.0
 
 test:
   imports:
