@@ -6,27 +6,29 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: dc86ad9a5f94482aec14926788f6b78b428be68ee0428cbca22f89b6326f8b7a
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     - setuptools
   run:
     - jsonschema
     - pytest >=7.0.0
-    - python >=3.7
+    - python >={{ python_min }}
     - pyyaml
     - xopen >=1.4.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pytest_workflow
 
